@@ -8,11 +8,11 @@
 
 'use strict';
 
-var resolve = require('path').resolve.bind(process.cwd()),
+var resolve = require('path').resolve.bind(null, process.cwd()),
     extend = function (a, b) { for (var x in b) {a[x] = b[x];  } return a; };
 
 module.exports = function(grunt) {
-    var enb = require('enb/lib/server/server-middleware');
+    var enb = require('enb/lib/api/make.js');
 
     grunt.registerMultiTask('enb', 'enb make for project', function () {
         if (!this.data.targets)
