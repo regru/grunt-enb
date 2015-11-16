@@ -37,7 +37,6 @@ grunt.initConfig({
             // цель. Передавать обязательно
             targets: ['pages-desktop/index/']
         },
-        // аргументы, которые поддерживает enb (кроме projectPath)
         options: {
             // не выводить лог enb
             noLog: true,
